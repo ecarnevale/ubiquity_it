@@ -1,0 +1,201 @@
+Torna a [[Labs/Ubiquity]].
+
+== In altre lingue ==
+
+Se l'Italiano non e' la tua lingua madre, leggi pure il tutorial nella tua lingua. Se non ne esiste una copia e vuoi dare una mano, salta a bordo e contribuisci con una traduzione.
+
+[[ja:Ubiquity 0.1.2 User Tutorial|日本語で]] [[es:Ubiquity 0.1.2 User Tutorial|En español]] [[zh-CN:Ubiquity 0.1.2 User Tutorial|简体中文]] 
+
+= Benvenuto =
+
+Ubiquity e' un'estensione sperimentale di Firefox che ti fornisce un nuovo e potente modo per interagire con il Web.
+
+Probabilmente sei abituato a dire a Firefox <i>dove vuoi andare</i> inserendo <b>indirizzi Web</b> all'interno della barra degli indirizzi (URL):
+
+http://farm4.static.flickr.com/3159/2421200474_1bf74ef498_o.png
+
+Con Ubiquity installato sarai in grado di dire a Firefox <i>cosa vuoi fare</i> inserendo <b>comandi</b> all'interno di un nuovo box di input di Ubiquity.
+
+http://www.toolness.com/images/20080819151657.jpg
+
+I comandi di Ubiquity possono fare praticamente qualsiasi cosa. Ubiquity ha di suo un insieme di comandi che rendono piu' semplici e piu' veloci le comuni operazioni web. In questo tutorial ti insegneremo come usarne alcune. Alla fine di questo tutorial sarai in grado di eseguire ricerche in wikipedia, google, yelp e di definizione; di aggiungere mappe alla tua email e di tradurre un frammento di pagina web, evidenziare una parola ed infine inviarla via mail ad un amico.
+
+I comandi inclusi con Ubiquity sono solo l'inizio: ognuno puo' creare nuovi comandi e condividerli. Creare comandi per Ubiquity&mdash;ed [http://www.azarask.in/blog/post/sharing-streamable-functionality/ estendere il web]&mdash;dovrebbe essere facile tanto quanto creare una pagina web. Se volete imparare a creare i vostri comandi potete leggere come fare nel [[Labs/Ubiquity/Ubiquity_0.1_Author_Tutorial|tutorial per gli sviluppatori]].
+
+Ubiquity e' ancora in lavorazione e noi non vediamo l'ora che tu ti aggiunga al nostro team virtuale per sperimentare con noi. Se dopo aver letto questo tutorial pensi che Ubiquity possa essere reso piu' semplice da utilizzare o hai un'idea per il suo sviluppo futuro, speriamo proprio tu impiegassi un paio di minuti a [http://getsatisfaction.com/mozilla/products/mozilla_ubiquity condividere i tuoi pensieri con noi]. Venendo coinvolto in Ubiquity mentre il progetto e' nella sua fase iniziale, hai l'opportunita' di indirizzarne la sua crescita.
+
+== Se hai un Mac... ==
+
+Devi installare [http://growl.info/ Growl].  E' un'estensione di sistema per Mac OS X che le applicazioni possono utilizzare per visualizzare messaggi trasfarenti non invadenti. Ubiquity utilizza le notifiche di Growl per mostrarti l'output dei comandi e comunicarti gli errori che possono accadere.
+
+In Windows (XP e successivi), non devi installare nulla di speciale visto che Ubiquity utilizzera' il sistema di messaggi pop-up del sistema operativo.
+
+In Linux non devi fare nulla di speciale: assicurati solo di essere aggiornato all'ultima versione di Firefox.
+
+= Le basi =
+
+== Avviare Ubiquity ==
+
+Se non l'hai ancora fatto, [https://people.mozilla.com/~avarma/ubiquity-0.1.xpi installa Ubiquity]. Una volta che l'hai fatto puoi invocare Ubiquity semplicemente premendo '''option-spazio''' su un Mac, oppure '''control-spazio''' se hai Windows. In Linux, prova con '''control-alt-spazio'''
+
+Una volta che hai premuto la combinazione di tasti appropriata, ti apparira' nell'angolo in alto a sinistra del tuo browser un riquadro di un nero trasparente, con un cursore lampeggiante bianco.
+
+http://www.toolness.com/images/20080714190900.jpg
+
+Puoi impartire un comando a Ubiquity scrivendo qualcosa all'interno del riquadro e poi premendo Invio.  Per non dilungarci chiameremo quest'operazione "inviare" un comando. Da ora in poi all'interno di questo tutorial, quando diremo "invia XYZ", intenderemo "premi alt-spazio (o ctrl-spazio) per far apparire il riquadro di Ubiquity e poi digita XYZ".
+
+== Primo comando: fare una ricerca su Wikipedia ==
+
+Iniziamo con Wikipedia. Diciamo che vuoi sapere cos'e' un "babel fish", devi semplicemente inviare "wikipedia babel fish".
+
+Mentre stai scrivendo il comando, vedrai due cose sotto il riquadro:  Una '''lista di suggerimenti''' e una '''anteprima''' del comando corrente.  Nell'immagine qui sotto la lista di suggerimenti consiste in wikipedia" e "weather", mentre l'anteprima dice "Searches Wikipedia".
+
+http://www.toolness.com/images/20080819152417.jpg
+
+Finito di scrivere "wikipedia babel fish" dovresti essere in grado di vedere i riassunti di alcune pagine di wikipedia relative a "babel fish":
+
+http://www.toolness.com/images/20080819152930.jpg
+
+Sara' necessario un attimo per ottenere da Wikipedia queste informazioni, ma Ubiquity rimarra' completamente reattiva per tutto il tempo.
+
+Successivamente potrai:
+
+* Premere Invio per '''eseguire''' il comando.  L'esecuzione del comando per Wikipedia ha l'effetto di portarti a quella pagina di Wikipedia.
+* Premere Esc per <b>annullare</b> il comando.  Ubiquity sparira' senza fare nulla.
+* Cliccare su uno dei <b>link</b> nell'anteprima.  Nel caso dell'anteprima di Wikipedia, cliccando un link verrai portato direttamente alla pagina che ti interessava.
+
+== Abbreviare comandi e utilizzare la lista dei suggerimenti ==
+
+"Wikipedia babel fish" in effetti sono un bel po' di lettere da scrivere.  Puoi consumarti e rovinarti un po' meno le dita facendo fare il lavoro a Ubiquity e alla sua lista di suggerimenti.  Come hai appena visto, richiamare Ubiquity e scrivere solo "w" ti propone i suggerimenti di tutti i comandi che iniziano con quella lettera, in questo caso: Wikipedia e Weather.
+
+Non appena aggiungi "i", la lista si riduce ad un solo comando che inizia con  "wi"&mdash;"Wikipedia".  A questo punto puoi premere la barra spaziatrice e scrivere il resto della tua frase e Ubiquity sapra' che il verbo che vuoi usare sara' "wikipedia".  Quindi inviare "wi babel fish" e' esattamente la stessa cosa che inviare "wikipedia babel fish".
+
+Proviamo con un altro esempio.  Immagina di voler conoscere che tempo faccia a Chicago.  Prova a inviare "w chicago".
+
+http://www.toolness.com/images/20080819155204.jpg
+
+Vedrai che il suggerimento in cima alla lista e' "wikipedia chicago".  Se ora premi Invio questo e' il comando che verra' eseguito.  ma questo non e' quello che vogliamo in questo momento, quindi invece premi <b>la freccia in giu'</b> ed evidenzierai la seconda proposta: "weather chicago"
+
+Ora puoi quindi vedere l'anteprima delle previsioni del tempo per Chicago.  Premi invio per andare alla pagina con le previsioni complete su Wunderground.com. 
+
+Ovviamnete, potresti anche aver inviato semplicemente "we chicago", o anche "we 60601" (che e' il CAP di Chicago) ottenendo lo stesso risultato.
+
+== Eseguire comandi sulle selezioni ==
+
+Spesso, quello in cui sei interessato e' di fronte a te, sulla pagina web che stai guardando.  Perche' complicarsi la vita riscrivendola?
+
+Seleziona le parole "Mountain View, California" che sono qui sotto trascinando il mouse sopra di esse:
+
+  Mountain View, California
+
+Ora richiama Ubiquity, e scrivi semplicemente le prime lettere del nome del comando:
+
+http://www.toolness.com/images/20080819155845.jpg
+
+Oppure, diciamo che stai leggendo una pagina web e che trovi una parola sconosciuta:
+
+  aglet
+
+Semplicemente seleziona la parola ed invia "define".
+
+Avresti ottenuto lo stesso risultato scrivendo  "define aglet"&mdash;o solo "def aglet", o anche "def this".  (Ubiquity comprende "this" (questo) come un riferimento alla selezione.)
+
+= Altri esempi di comandi =
+
+== Spedire email == 
+
+Right now, the email command uses [http://mail.google.com Google Mail].  That means you'll only be able to follow along with the next part of the tutorial if you have a GMail account.  Eventually, of course, the command should work with all major web-based email providers, as well as applications like [http://www.mozilla.com/en-US/thunderbird/ Thunderbird].  (If you're a programmer, [http://groups.google.com/group/ubiquity-firefox we'd love some help with that].)  For now, if you have a GMail account, please make sure you're logged in.  If you don't, you might want to skip ahead to the next part of the tutorial.
+
+Assuming you're logged into your GMail account, issue "email".  In the suggestion list, you'll see a suggestion that says "Email (message) (to contact)".
+
+http://www.toolness.com/images/20080819160313.jpg
+
+This is a clue that the Email command expects two pieces of information:  the message is <b>what</b> you're emailing, and the contact is <b>who</b> you want to send it to.  However, you can leave out one of these things &mdash; or both of them &mdash; and the Email command will still work.  So I can issue any of these commands:
+
+* "email hello"
+* "email to chris"
+* "email hello to chris"
+* "email to chris hello"
+
+I'm using "chris" because that's the name of someone in my GMail contacts list.  If you don't have a "chris" in your contacts list, just substitute the name of any of your friends in these examples.
+
+Let's say I've found an interesting fact on a web page and I want to send it to Chris.  I can select part of the page, including links, pictures, and anything else, and then issue "email this to chris".  Ubiquity understands "this" to refer to my selection.  (I could also have said "email it to chris" or "email selection to chris" -- all of these are equivalent.)  The selected part of the page shows up in my preview:
+
+[[Image:Email-picture-selection.png]]
+
+(Actual email addresses blurred out to protect the innocent.) Since I know several people named Chris, there are several lines in the suggestion list -- one each Chris in my GMail contacts list.  I can arrow-key down to the Chris I want and then hit the Enter key.
+
+I'm taken to the GMail "compose new email" page.  The chunk of the page that I selected is reproduced in the body of my email, the "to" field is filled with the email address I selected, and the "subect" field contains the title of the web page I was on.  I can now edit this email to add anything else I want to say, before clicking "Send".
+
+== The Map command ==
+
+Let's say you're arranging to meet up with a friend at a restaurant, and you want to include a map in the email.  (Yes, it's Aza's favorite example.)
+
+Type out the address you want to map, then select it and issue "map".  In the preview, you'll see a thumbnail-size map of the area (from Google Maps).
+
+[[Image:Map-preview-1.png]]
+
+If you execute the command, you'll be taken to the Google Maps page.  Or, you can click on the image in the preview to get a larger, interactive version.  After scrolling and zooming this map to your liking, you can click the "insert map in  page" link to insert the map into your email.
+
+[[Image:Map-preview-2.png]]
+
+You can give it a try by selecting the address below and issuing "map":
+
+ Mozilla Corporation, 1981 Landings Drive, Mountain View, CA
+
+Then click the image in the preview to get the larger map, then click the "insert map in page" link and watch what happens.  Surprised?
+
+== The Translate command ==
+
+That's right, Ubiquity commands can alter the contents of a page, even if the page wouldn't normally be editable.  A command that makes good use of this ability is the "Translate" command.  To try it, select the text below and issue "translate" (or just "tra") and execute.
+
+　　２１世紀に、国際化をよく考えなければなりません。
+
+It's translation-by-machine, so the results are bound to sound awkward, but at least you can get the gist of the meaning.
+
+The full command is
+
+ translate (text) (from language) (to language)
+
+So you can specify what language you want to translate from, and what language you want to translate to.  If you leave either of these out, Ubiquity will just make a guess about what you want.
+
+Here are some other examples you can try:
+
+* "tr good evening to spanish"
+* "tr buenos tardes from spanish to french"
+* Select some English text on this page and then: "translate this to german"
+
+= Going Further =
+
+
+== Getting Help and Discovering Commands ==
+
+By now you're probably wondering, "How many commands are there?  What are they all called?  How am I supposed to know what a command could be unless I memorize them all?"
+
+These are good questions!  To start getting some answers, issue the "command-list" command, and hit Return to execute it.  You'll be taken to a special page listing every command you have installed, and describing what each one does.
+
+[[Image:Command-list.png]]
+
+For more general help, you can execute the "help" command.  Here, you can change the hotkey that you use to activate Ubiquity, un-subscribe from command feeds, and so on.
+
+The general help page and the command-list page link to each other, so whichever one you open, you can get to the other with a single click.
+
+You can also get to the main help page by typing '''about:ubiquity''' into the Firefox URL bar.
+
+
+
+== Teaching Ubiquity New Commands ==
+
+We've mentioned that anyone can create Ubiquity commands.  Once created, these commands can be embedded in any web page.  If you have Ubiquity installed and you visit a page with an embedded command, Firefox will present you with the option of <b>subscribing</b> to the command.
+
+To see this in action, you can visit [http://hg.toolness.com/ubiquity-firefox/raw-file/7435416f211a/examples/sample-cmd.html this example page on Atul's personal site].  You should see a bar coming down from the top of the browser window asking you whether you want to subscribe to the command or not.
+
+http://www.toolness.com/images/20080820111209.jpg
+
+If you choose to subscribe, you'll see a rather scary-looking warning page:
+
+http://www.toolness.com/images/20080820111725.jpg
+
+It's important to understand the dangers of subscribing to Ubiquity commands from sites that you don't trust.  Since a Ubiquity command can do anything, and it has full access to your web browser, a bad person could write a Ubiquity command to steal your personal information or do malicious things to your computer.  You should not install Ubiquity commands unless you are confident that the source is trustworthy.
+
+In the future, we'll be creating something called a "trust network" that Ubiquity users can use to share knowledge about which commands are trustworthy.  When you visit a page with an embedded command, you'll be able to see what your friends with Ubiquity have said about this command -- whether they've given it a thumbs-up or left you a warning to let you know it could be dangerous.  This system doesn't exist yet, but once it does we will modify this section of the tutorial to let you know how to use it.
